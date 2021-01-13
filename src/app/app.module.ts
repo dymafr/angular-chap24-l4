@@ -5,6 +5,7 @@ import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { AppComponent } from "./app.component";
 import { MaterialModule } from "./shared/modules/material.module";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { DialogComponent } from "./shared/components/dialog.component";
 
 @NgModule({
   imports: [
@@ -14,7 +15,7 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
     BrowserAnimationsModule,
     MaterialModule
   ],
-  declarations: [AppComponent],
+  declarations: [AppComponent, DialogComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

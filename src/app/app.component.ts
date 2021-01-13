@@ -16,5 +16,10 @@ export class AppComponent implements OnInit {
     this.chips = this.chips.filter(el => el !== chip);
   }
 
+  openDialog() {}
+
   ngOnInit() {}
 }
+
+
+
