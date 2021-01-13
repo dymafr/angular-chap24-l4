@@ -17,6 +17,6 @@ export class DialogComponent implements OnInit {
   }
 
   quit() {
-    this.dialogRef.close("JE suis une réponse");
+    this.dialogRef.close("Je suis une réponse");
   }
 }
