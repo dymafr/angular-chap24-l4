@@ -21,10 +21,13 @@ export class AppComponent implements OnInit {
   }
 
   openDialog() {
-    this.dialog.open(DialogComponent, {
+    const ref = this.dialog.open(DialogComponent, {
       width: "800px",
-      height: "400px"
+      height: "400px",
+      data: "Des données"
     });
+
+    ref.afterClosed().subscribe(data => console.log(data));
   }
 
   ngOnInit() {}
