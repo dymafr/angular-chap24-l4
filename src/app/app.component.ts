@@ -21,7 +21,10 @@ export class AppComponent implements OnInit {
   }
 
   openDialog() {
-    this.dialog.open(DialogComponent);
+    this.dialog.open(DialogComponent, {
+      width: "800px",
+      height: "400px"
+    });
   }
 
   ngOnInit() {}
