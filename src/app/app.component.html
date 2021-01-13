@@ -2,7 +2,11 @@
 	<mat-tab label="Onglet 1">
 		<div class="container">
 
-			<button matTooltip="je suis de l'aide" mat-raised-button color="accent" (click)="openDialog()">Open dialog</button>
+			<button (click)="openSnack()" mat-raised-button color="primary">Snackbar</button>
+
+			<br>
+
+			<button matTooltip="je suis de l'aide" matTooltipPosition="right" mat-raised-button color="accent" (click)="openDialog()">Open dialog</button>
 
 			<br>
 
